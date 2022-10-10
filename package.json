@@ -1,6 +1,6 @@
 {
   "name": "ts-demo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "egg.js framework typescript",
   "private": true,
   "egg": {
@@ -19,7 +19,7 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "eslint . --ext .ts --resolve-plugins-relative-to .",
-    "clean": "ets clean"
+    "clean": "tsc -b --clean"
   },
   "dependencies": {
     "egg": "^2.6.1",
@@ -49,7 +49,9 @@
     "type": "git",
     "url": ""
   },
-  "eslintIgnore": ["coverage"],
+  "eslintIgnore": [
+    "coverage"
+  ],
   "author": "Fairy",
   "license": "MIT"
 }
